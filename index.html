@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTAH - Base Builder</title>
+</head>
+
+<body>
+  <h1>Base Builder</h1>
+
+  <div class="tools">
+    <div id="pencil-tool" class="tool">
+      PENCIL
+    </div>
+    <div id="fill-tool" class="tool">
+      FILL
+    </div>
+  </div>
+
+  <div class="gridOptions">
+
+    <div class="gridOption">
+      <span>
+        Columns
+      </span>
+      <input type="number" id="numberOfColumns" />
+    </div>
+    <div class="gridOption">
+      <span>
+        Rows
+      </span>
+      <input type="number" id="numberOfRows" />
+    </div>
+  </div>
+
+  <div id="tileStyleSelector">
+
+  </div>
+  <div id="grid"></div>
+
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/dijkstra.js"></script>
+  <script src="./scripts/tools.js"></script>
+  <script src="./scripts/tile_data.js"></script>
+  <script src="./scripts/scripts.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+</body>
+
+</html>

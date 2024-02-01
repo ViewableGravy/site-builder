@@ -1,0 +1,58 @@
+:root {
+  --padding: 6px;
+}
+
+#grid {
+  display: grid;
+
+}
+
+#tileStyleSelector {
+  display: flex;
+  gap: calc(var(--padding) * 2);
+  margin-bottom: calc(var(--padding) * 2);
+}
+
+
+.gridOptions {
+  display: flex;
+  gap: calc(var(--padding) * 2);
+  padding: calc(var(--padding) * 2);
+}
+
+.gridOption {
+  width: 66px;
+  display: flex;
+  flex-direction: column;
+}
+
+.styletile {
+  width: 66px;
+  padding: var(--padding);
+  height: 66px;
+  outline: 1px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white
+}
+
+.styletile.selected {
+  border-width: 3px;
+  outline: 3px dashed violet;
+}
+
+.tile {
+  user-select: none;
+  border: 1px dotted purple;
+}
+
+.tool {
+  outline: 1px dotted purple;
+  width: 120px;
+}
+
+.tool.selected {
+  outline: 3px dotted rgb(0, 128, 11);
+}
